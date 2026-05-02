@@ -63,7 +63,7 @@ export default function App() {
 
   const getPrediction = async (data: HousingFormData): Promise<PredictionResult> => {
     // Note: The URL will be updated upon deployment.
-    const API_URL = 'http://localhost:8000/predict';
+    const API_URL = 'https://backend-california-housing-predictor-1.onrender.com';
     
     const response = await fetch(API_URL, {
       method: 'POST',
