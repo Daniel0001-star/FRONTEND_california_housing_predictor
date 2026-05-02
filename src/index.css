@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ocean-deep: #001219;
+  --color-ocean-navy: #002233;
+  --color-ocean-teal: #0a9396;
+  --color-ocean-cyan: #94d2bd;
+  --color-ocean-foam: #e9d8a6;
+}
+
+@layer base {
+  body {
+    @apply bg-ocean-deep text-white font-sans antialiased;
+  }
+}
+
+.sophisticated-gradient {
+  background: radial-gradient(circle at 50% -20%, #002233 0%, #001219 80%);
+}
+
+.form-container {
+  @apply bg-ocean-navy p-8 rounded-[24px] border border-ocean-teal/30 shadow-[0_20px_40px_rgba(0,0,0,0.4)];
+}
+
+.chine-input {
+  @apply w-full bg-black/20 border border-ocean-cyan/20 rounded-lg px-4 py-3 text-white font-mono text-sm focus:outline-none focus:border-ocean-teal focus:bg-ocean-teal/10 transition-all placeholder:text-white/20;
+}
+
+.chine-button {
+  @apply bg-ocean-teal text-ocean-deep font-bold px-8 py-4 rounded-xl hover:opacity-90 active:scale-95 transition-all disabled:opacity-50 uppercase tracking-widest text-xs;
+}
+
+.viz-container {
+  @apply bg-ocean-navy/50 border border-dashed border-ocean-cyan/30 rounded-[24px] p-8 flex flex-col relative;
+}
