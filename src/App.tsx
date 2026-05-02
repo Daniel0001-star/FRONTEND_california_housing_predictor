@@ -103,7 +103,7 @@ export default function App() {
       <header className="w-full max-w-6xl flex items-center justify-between mb-12 border-b border-ocean-cyan/20 pb-6">
         <div className="flex items-center gap-3">
           <h1 className="text-3xl font-display font-bold tracking-tight text-ocean-cyan">
-            California Housing Predictor
+            California Housing Predictor By CHINE
           </h1>
         </div>
         <div className="flex items-center gap-3 px-4 py-2 bg-ocean-navy/50 rounded-full border border-ocean-teal/20">
